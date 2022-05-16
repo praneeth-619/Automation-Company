@@ -5,9 +5,9 @@ public class Employee {
 	private int employeeId;
 	private String employeeName;
 	private String designation;
-	private String salary;
+	private String salary;//Datatype should be double
 	private String projectName;
-	
+
 	public String getSalary() {
 		return salary;
 	}
@@ -16,9 +16,7 @@ public class Employee {
 		this.salary = salary;
 	}
 
-	
-
-	public Employee(int employeeId, String employeeName, String designation, String projectName,String salary) {
+	public Employee(int employeeId, String employeeName, String designation, String projectName, String salary) {
 		super();
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
@@ -58,7 +56,5 @@ public class Employee {
 	public void setDesignation(String designation) {
 		this.designation = designation;
 	}
-
-
 
 }

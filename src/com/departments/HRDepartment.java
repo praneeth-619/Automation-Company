@@ -7,30 +7,26 @@ import java.util.Scanner;
 
 public class HRDepartment {
 
-	private String[] projectList;
+//	private String[] projectList;
 
-//	iniitlize inside constructor
 	private ArrayList<Employee> employees = new ArrayList<>();
 
-	public void employeesDetails() {
+	public HRDepartment() {
 
 		employees.add(new Employee(123, "Praneeth", "Test Engineer", "E-commerce", "50000"));
-		employees.add(new Employee(124, "Prakash", "Dev Ops", "Finace", "60000"));
+		employees.add(new Employee(124, "Prakash", "Dev Ops", "Finance", "60000"));
 		employees.add(new Employee(125, "Pramod", "Developer", "banking", "70000"));
 		employees.add(new Employee(126, "Patel", "Automation Engineer", "E-commerce", "80000"));
 		employees.add(new Employee(127, "Prayag", "Test Lead", "banking", "900000"));
 
 	}
 
-	public void searchEmployyeList(String Search) {
-		employeesDetails();
-
-		String newLine = System.lineSeparator();
+	public void searchEmployeeList(String search) {
 
 		for (Employee employee : employees) {
-			if (employee.getProjectName().equalsIgnoreCase(Search)) {
+			if (employee.getProjectName().equalsIgnoreCase(search)) {
 				System.out.println(
-						" Employee ID: " + employee.getEmployeeId() + " Employee Name: " + employee.getEmployeeName()
+						"Employee ID: " + employee.getEmployeeId() + " Employee Name: " + employee.getEmployeeName()
 								+ " Project Name: " + employee.getProjectName() + " Salary: " + employee.getSalary());
 			}
 		}
@@ -38,7 +34,6 @@ public class HRDepartment {
 	}
 
 	public void salaryEachEmployee(String Search) {
-		employeesDetails();
 
 		for (Employee employee : employees) {
 
@@ -51,8 +46,6 @@ public class HRDepartment {
 	}
 
 	public void getEmployeeDetails(int employeeID) {
-
-		employeesDetails();
 
 		String newLine = System.lineSeparator();
 
@@ -67,8 +60,6 @@ public class HRDepartment {
 	}
 
 	public void totalEmployees() {
-
-		employeesDetails();
 
 		int count = 0;
 		for (Employee employee : employees) {

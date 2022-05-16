@@ -4,9 +4,9 @@ public class App {
 
 	public static void main(String[] args) {
 
-// 	Getting Details of an employee 	
+// 	Getting Details of an employee 	 
 		HRDepartment employees = new HRDepartment();
-//		employees.getEmployeeDetails(123);
+		employees.getEmployeeDetails(300);
 
 //	Assign a laptop with valid employeeID	
 		// ITDepartment itDepartment = new ITDepartment();
@@ -16,11 +16,11 @@ public class App {
 		// employees.totalEmployees();
 
 		// Show a list of all the employees under a project including the manager, and
-		// team lead.
-		// employees.searchEmployyeList("");
+		// team lead
+	//	employees.searchEmployeeList("abc");
 
 		// Show the salary of each employee
-		employees.salaryEachEmployee("Praneeth");
+		employees.salaryEachEmployee(null);
 
 	}
 }

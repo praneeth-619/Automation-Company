@@ -1,46 +1,27 @@
 package com.departments;
 
-public class AutomationDepartment  {
+import java.util.ArrayList;
 
-	public String[] managers;
-	public String[] teamLeads;
-	public String[] employees;
-	private String[] projectDetails;
+public class AutomationDepartment {
 
-	public String[] getManager() {
+	private ArrayList<String> managerList = new ArrayList<>();
+	private ArrayList<String> teamLeads = new ArrayList<>();
+	private ArrayList<String> projects = new ArrayList<>();
 
-		managers = new String[3];
-		managers[0] = "Vels";
-		managers[1] = "Sanjay";
-		managers[2] = "Vishy";
+	public AutomationDepartment() {
 
-		return managers;
-	}
+		managerList.add("Vels");
+		managerList.add("Sanjay");
+		managerList.add("Vishy");
 
-	public String[] getTeamLead() {
+		teamLeads.add("Arun");
+		teamLeads.add("Mallikarjun");
+		teamLeads.add("Suraj");
 
-		teamLeads = new String[3];
-		teamLeads[0] = "Arun";
-		teamLeads[1] = "Mallikarjun";
-		teamLeads[2] = "Suraj";
-
-		return teamLeads;
-	}
-	//List 
-
-	public String[] getEmployee() {
-
-		employees = new String[3];
-		employees[0] = "Praneeth";
-		employees[1] = "Prashanth";
-		employees[2] = "Prakash";
-
-		return employees;
-	}
-
-	private String projectDetails() {
-		return null;
+		projects.add("Citrix");
+		projects.add("Twitter");
+		projects.add("Banking");
+		projects.add("IOS");
 
 	}
-
 }
