@@ -20,7 +20,7 @@ public class App {
 		// employees.searchEmployyeList("");
 
 		// Show the salary of each employee
-		employees.salaryEachEmployee("Prayag");
+		employees.salaryEachEmployee("Praneeth");
 
 	}
 }
